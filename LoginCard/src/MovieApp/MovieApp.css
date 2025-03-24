@@ -1,0 +1,531 @@
+
+.moviemaindiv{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100vh; /* Fix the height to full viewport */
+    overflow: hidden; /* Prevent scrolling */
+   
+}
+.moviehead{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: x-large;
+    position: relative;
+    left: 8.5rem;
+}
+
+.searchbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust as needed */
+   right: 1.5rem;
+   margin-top: 0.4rem;
+
+}
+  
+.searchbar i {
+    position: absolute;
+    left: 10px; 
+    color: #828894;
+}
+
+.upperfooter{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+  
+.searchplace {
+    width: 100%;
+    height: 40px;
+    padding: 8px 10px 8px 35px; /* Make space for icon */
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    outline: none;
+    background-color: #f9fafb;
+    color:#828894;
+}
+
+
+
+.searchplace::placeholder{
+    color:#828894;
+}
+
+.moviebody {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   
+    justify-content:center   ; 
+    align-items: center; 
+    place-items: center; 
+    gap: 3rem;
+    padding: 3rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    max-height: 42rem; /* Adjust as needed */
+}
+.cardsmain{
+    /* height: 20rem;
+    width: 16rem;
+    border: 1px solid black; */
+    width: 18rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 26rem;
+}
+
+.cardsmain:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.cardUpper{
+    /* height: 60%;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    height: 65%;
+}
+
+.cardUpper img{
+    /* height: 12rem;
+    width: 16rem; */
+    width: 100%;
+    height: 16rem;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.cardLower{
+    /* height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left:  1rem;
+    gap: 0.8rem;
+    margin-top: 0.6rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    height: 35%;
+    flex-grow: 1;
+}
+
+.cardLower h4 {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    height: auto;
+    max-height: 3rem; /* Limits height */
+    line-height: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Keeps it on one line */
+    width: 100%;
+}   
+
+.cardLower button{
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    width: 6rem;
+    height: 1.8rem;
+    max-height: 40px;
+    
+}
+
+.star {
+    color: gold;
+    font-size: 18px;
+    margin-right: 2px;
+  }
+
+  .cardlast{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: bold;
+    height: 2rem;
+    width: 100%;
+  }
+
+  .watchbutton {
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: end;
+    margin-top: auto;
+    width: 90%;
+  }
+
+  .watchbutton button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+      width: 7rem;
+  }
+
+  .watchbutton button:hover {
+    background-color: #217dbb;
+}
+
+  .backBtn{
+   margin-top: 0.8rem;
+  }
+
+  /* Tab container */
+.movietabs {
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 2rem;
+}
+
+/* Tab buttons */
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 16px;
+    height: 2.5rem;
+    transition: background 0.3s ease-in-out;
+    width: 27rem;
+    
+}
+
+.tab-button.active {
+    border-bottom: 2px solid #3498db;
+    
+    color:#3498db;
+}
+
+/* Tab content */
+.tab-content {
+    display: none;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+/* Modal Box */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.model-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align everything to the start */
+    gap: 1rem; /* Adds spacing between elements */
+    text-align: left;
+    gap: 1rem;
+    height: 100%;
+}
+
+.model-body div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.model-genreshead, .model-production-company, .model-languages, .model-overview {
+    width: 100%;
+    line-height: 1.2; /* Increase spacing between lines */
+    word-spacing: 0.2rem;
+}
+
+.model-genres{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.model-genres p{
+    border: 1px solid black;
+    padding: 0.4rem;
+    border-radius: 1rem;
+}
+
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+/* Prevent Interaction with Other Elements When Modal is Open */
+.modal-overlay.open {
+    pointer-events: auto;
+}
+
+.cardnameandinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+.movie-title {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    max-width: 150px; /* Adjust as needed */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.movie-title:hover::after {
+    content: attr(data-title); /* Show full title */
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(253, 219, 84, 0.9); /* Dark Yellow */
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 999;
+}
+
+.movie-title:hover {
+    overflow: visible;
+}
+
+@media (max-width: 768px) {
+
+    .moviemaindiv {
+       
+       
+    }
+
+    .upperfooter{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 0;
+    }
+   
+    .moviehead {
+        font-size: 1.4rem;
+        text-align: center;
+        position: static;
+        width: 100%;
+        margin-bottom: 0.3rem;
+       
+    }
+
+   
+   .searchbar {
+        width: 100%;
+        position:static;
+        justify-content: end;
+        margin: 0 auto;
+    }
+
+     .searchplace {
+        width: 100%;
+       
+    }
+    .searchbar i {
+        position: absolute;
+        left: 40px; /* Adjust icon position */
+        color: #828894;
+    }
+    
+  
+     .movietabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 1rem;
+        
+    }
+
+   .tab-button {
+        flex: 1;
+        font-size: 0.65rem;
+        padding: 5px;
+        text-align: center;
+        width: auto;
+        height: 2rem;
+    }
+
+    
+    .moviebody {
+       justify-content: center;
+       
+    }
+
+   .cardsmain {
+        width: 95%;
+        max-width: 350px;
+       
+    }
+
+     
+
+    .cardLower {
+        padding: 0.5rem;
+    }
+
+   
+
+    
+    
+    .modal-content {
+        width: 90%;
+        max-width: 350px;
+    }
+
+   .close-button {
+        font-size: 20px;
+        top: 8px;
+        right: 12px;
+    } 
+    .backBtn{
+        margin-top: 0;
+    }
+
+
+    .model-body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+        text-align: left;
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 0.8rem; /* Decreased font size */
+    }
+
+    /* Align sections properly */
+    .model-body div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+
+    /* Genres Section */
+    .model-genres {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+    }
+
+    .model-genres p {
+        border: 1px solid black;
+        padding: 0.2rem 0.5rem;
+        border-radius: 1rem;
+        font-size: 0.75rem; /* Reduced size */
+        background: #f0f0f0;
+    }
+
+    /* Overview, Production, and Languages */
+    .model-overview, 
+    .model-production-company, 
+    .model-languages {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    /* Align content properly in a row */
+    .model-production-company p, 
+    .model-languages p {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+    }
+
+    /* Close Button */
+    .close-button {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: black;
+    }
+
+    /* Name & Info Section */
+    .cardnameandinfo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        width: 100%;
+    }
+}

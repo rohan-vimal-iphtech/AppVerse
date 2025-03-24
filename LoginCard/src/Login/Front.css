@@ -1,0 +1,165 @@
+
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3em;
+ } 
+.right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  margin-top: 3em;
+ }
+
+.bg {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  padding: 3em;
+}
+
+.left-half {
+  background: linear-gradient(to bottom, #0b4fa4, #1d82e2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px 0 0 25px;
+  border: 1px solid black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  
+}
+
+
+.logo {
+  margin-top: 4em;
+  color: white;
+}
+
+#logo {
+  background-color: white;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo h3 {
+  font-size: 1.8em;
+  margin-top: 0em;
+  color: white;
+}
+
+
+h1 {
+  font-size: 2rem;
+  color: aliceblue;
+ 
+}
+
+
+.para {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 4em;
+  max-width: 85%;
+  line-height: 1.5;
+}
+
+.right-half {
+  width: 50vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  border: 1px solid black;
+  border-radius: 0 25px 25px 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  padding: 2em;
+}
+
+
+@media screen and (max-width: 1024px) {
+  
+  .left-half, .right-half {
+    width: 50%;
+  }
+
+  
+  h1 {
+    display: none;
+  }
+
+  .para {
+    font-size: 1em;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left{
+    margin-top: 0em;
+  }
+  .right{
+    margin: 0em;
+  }
+  .bg {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5em;
+  }
+
+ 
+
+  .left-half{
+    width: 100%;
+    height: auto;
+   
+    border-radius: 20px 20px 0 0;
+  }
+
+  .right-half{
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    border-radius: 0 0 20px 20px;
+  }
+
+
+  h1 {
+    font-size: 2em;
+    margin-top: 1em;
+  }
+
+  
+  .logo {
+    margin-top: 1em;
+  }
+
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .logo h3 {
+    font-size: 1.5em;
+  }
+
+  .para {
+    
+    display: none;
+  }
+}
+

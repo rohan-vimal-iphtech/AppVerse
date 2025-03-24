@@ -1,0 +1,176 @@
+
+
+
+.heading {
+  color: black;
+  font-size: 1.8em;
+ 
+  text-align: center;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2em;
+  margin-top: 2em;
+  width: 100%;
+}
+
+
+.name {
+  width: 28em;
+  border-bottom: 4px solid #87c1d4;
+  margin-bottom: 0.4rem;
+  padding: 5px;
+}
+
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+label {
+  font-size: 1em;
+}
+
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+input[type="checkbox"] {
+  transform: scale(0.7); 
+}
+
+input::placeholder {
+  color: #D3D3D3; 
+  opacity: 1; 
+}
+
+.terms-label {
+  color:#D3D3D3;
+  font-size: small;
+}
+
+.showIcon{
+  opacity: 0.5; 
+  margin-left: 22rem;
+}
+
+.dob{
+  border: none;
+  outline: none;
+  margin-top: 1.2rem;
+  font-weight: 400;
+  margin-left: 0.2rem;
+}
+
+.gender{
+  border: none;
+  outline: none;
+  margin-top: 1.2rem;
+  font-size: small;
+}
+
+.dobAndGender{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .heading {
+    font-size: 1.6em;
+  }
+
+  .form {
+    font-size: 1.1em;
+  }
+
+  .name {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .btns {
+    flex-direction: row;
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 1.2em;
+    
+  }
+
+  .form {
+    font-size: 1em;
+    margin-top: 1.5em;
+  }
+
+  .name {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 1em;
+  }
+ 
+  input[type="checkbox"] {
+    transform: scale(0.5); 
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    font-size: 1rem;
+  }
+ 
+  .terms-label {
+    font-size: 9.5px; /* Adjust font size for mobile view */
+  }
+
+  .btns {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center;
+    gap: 10px;
+    width: 100%; 
+    padding: 10px 0;
+    margin-top: 1em;
+  }
+
+ button {
+    flex: 1; 
+    min-width: 50px; 
+    max-width: 120px; 
+    text-align: center;
+    
+    }
+    
+    .showIcon {
+    
+      margin-left: 2.1rem;
+    }
+
+    .dobAndGender{
+      flex-direction: column;
+     
+    }
+    
+}

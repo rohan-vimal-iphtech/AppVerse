@@ -1,0 +1,17 @@
+.btnlog {
+    background: linear-gradient(to bottom, #0099ff, #007acc);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    width: 7em;
+}
+@media screen and (max-width: 768px) {
+    .btnlog{
+        width: 0.8em;
+        font-size: 16px;
+    }
+}
