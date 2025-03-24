@@ -8,7 +8,7 @@ const BackBtn = () => {
     }
   return (
     <div className='backbtn' >
-        <button onClick={back}  style={{background:'none' , border:'none' , color:'white'}}><i class="fa-solid fa-chevron-left" ></i>Back</button>
+        <button onClick={back}  style={{background:'none' , border:'none' , color:' hsl(213, 87%, 34%)' , fontSize:'1.2rem'}}><i className="fa-solid fa-chevron-left"></i>Back</button>
     </div>
   )
 }
