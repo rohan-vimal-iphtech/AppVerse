@@ -1,0 +1,173 @@
+.countHeading{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    font-size: x-large;
+
+}
+
+.counterapps{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 8rem;
+}
+
+
+
+.counterbutton{
+    width : 100px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: x-large;
+    background-color: rgb(99, 166, 32);
+    color: white;
+    border: 0px solid rgb(99, 166, 32);
+}
+
+.container {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+    /* Full viewport height */
+  }
+
+.valueplace {
+    font-size: x-large;
+
+    width: 100px;
+    height: 45px;
+    background-color: bisque;
+    align-items: center;
+    text-align: center;
+    appearance: textfield;
+    padding: 10px;
+    font-size: 18px;
+    border: 0px solid bisque;
+    font-size: x-large;
+}
+.valueplace::-webkit-outer-spin-button,
+.valueplace::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.intcount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.intMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    
+    width: 465px;
+    
+}
+
+.counternameheading{
+    
+    margin-right: 15rem;
+}
+
+.backbtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+   
+    color: aliceblue;
+    height: 2rem;
+    width: 5rem;
+   
+    
+    border: none;
+    padding: 0.2rem;
+    
+ }
+
+ .backbtn i {
+    font-size: 1.1rem;
+    position: relative;
+    right: 0.3rem;
+    bottom:0.32px;
+ }
+ 
+
+
+
+/* 📱 Mobile Responsive Design */
+@media screen and (max-width: 768px) {
+   
+    .counterapps {
+        flex-direction: column;  /* Change layout to column */
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .counterbutton {
+        width: 70px;
+        height: 40px;
+        font-size: large;
+    }
+
+    .valueplace {
+        width: 80px;
+        height: 35px;
+        font-size: large;
+    }
+
+    .intMain{
+       
+        
+        width: 300px;
+        
+    }
+   
+
+    .intcount {
+        flex-direction: row;
+        gap: 2rem;
+        text-align: center;
+        
+    }
+
+    .incFunc{
+        margin-top: 2rem;
+    }
+
+    .counternameheading{
+    
+        margin-right: 5rem;
+    }
+
+    .backbtn{
+        position: relative;
+        left: 1rem;
+        top: 0;
+        width: 3.5rem;
+    }
+    .backbtn i {
+        font-size: 1.1rem;
+        position: relative;
+        right: 2rem;
+        top:1.35rem;
+     }
+    
+}
