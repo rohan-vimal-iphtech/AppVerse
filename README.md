@@ -28,7 +28,7 @@ Application Modules
 - Login & Signup : Users can create an account or sign in to access protected routes.
 - Protected Routes : Certain pages are accessible only to authenticated users.
 - Session Management : The application retains user login sessions until explicitly logged out.
-- <div style="width:360px;max-width:100%;"><div style="height:0;padding-bottom:60.83%;position:relative;"><iframe width="360" height="219" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/9ooerx"></iframe></div><p><a href="https://imgflip.com/gif/9ooerx">via Imgflip</a></p></div>
+![GIF Title](https://i.imgflip.com/9ooerx.gif)
 
   #Shopping Module
 
@@ -46,12 +46,15 @@ Application Modules
   - Movie Listing: Fetches and displays movie details.
   - Movie Details Page: Clicking on a movie shows more details.
 
+  ![GIF Title](https://i.imgflip.com/9oofyo.gif)
+    
  #Counter Application
 
  A simple counter to demonstrate state management using Redux.
 
 - Increment & Decrement: Modify the counter value using buttons.
 - Reset Button: Resets the counter to its default value.
+- ![GIF Title](https://i.imgflip.com/9oogse.gif)
 
  #To-Do Application
 
@@ -60,6 +63,8 @@ Application Modules
 - Task Creation : Users can add new tasks.
 - Task Editing: Modify existing tasks.
 - Task Deletion: Remove completed tasks.
+
+  ![GIF Title](https://i.imgflip.com/9oohg0.gif)
 
 
 
