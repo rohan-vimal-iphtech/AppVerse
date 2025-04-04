@@ -28,7 +28,9 @@ Application Modules
 - Login & Signup : Users can create an account or sign in to access protected routes.
 - Protected Routes : Certain pages are accessible only to authenticated users.
 - Session Management : The application retains user login sessions until explicitly logged out.
-![GIF Title](https://i.imgflip.com/9ooerx.gif)
+[![GIF Preview](https://i.imgflip.com/9pp09b.gif)](https://imgflip.com/gif/9pp09b)
+
+
 
 ## Shopping Module
 
