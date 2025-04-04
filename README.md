@@ -4,22 +4,46 @@ AppVerse is a multi-functional React-based web application that consolidates mul
 
 ## Features
 
--  User Authentication : Secure login and signup functionalities with session persistence.
--  Shopping Module : Browse products, view details, add to cart, and manage wishlists.
--  Movie Browser : Discover a collection of movies with detailed descriptions.
--  Counter Application : A simple counter app showcasing state management.
--  To-Do List : Create, edit, and delete tasks efficiently.
--  Dashboard Layout : Sidebar-based navigation for easy access to all modules.
+- User Authentication: Secure signup and login with Redux state management.
+- Dynamic Dashboard: Interactive UI with multiple sections and sidebar navigation.
+- Redux Persist: Ensures session persistence for user data.
+- Form Validation: Robust validation with error handling and custom dropdowns for country, state, and city selection.
+- Shopify API Integration: E-commerce features for demo purposes.
+- Responsive Design: Fully optimized for desktop and mobile screens.
+
+
 
 ## Technologies Used
 
-- ReactJS - JavaScript library for building UI components.
-- React Router - Declarative routing for navigation.
-- Redux Toolkit - State management solution.
-- Axios - HTTP client for API requests.
-- React Icons - Collection of icons for UI elements.
+- Frontend: React (19.0.0), Redux Toolkit (2.6.0), Redux Persist (6.0.0), React Router (7.1.5)
+- State Management: Redux Toolkit (2.6.0), React Redux (9.2.0)
+- API Integration: Shopify API, Axios (1.8.1)
+- Form Handling: React Hook Form, React Datepicker (8.1.0)
+- Other Libraries: React Easy Crop (5.4.1), React Icons (5.5.0), React Spinners (0.15.0), React Toastify (11.0.5)
 
-Application Modules
+## Installation & Setup
+
+ **Prerequisites**
+
+- Ensure you have Node.js and npm/yarn installed.
+- **Steps**
+  - Clone the repository:
+  - git clone https://github.com/rohan-vimal-iphtech/AppVerse.git
+  - cd AppVerse
+- **Install dependencies:**
+  - npm install
+  - Start the development server:
+  - npm start
+  - Open your browser and navigate to http://localhost:3000
+
+
+**Usage Guide**
+  - Sign Up & Login: Create an account and log in.
+  - Explore Dashboard: Navigate through different sections.
+  - Use Shopify API Features: Browse integrated e-commerce functionalities.
+  - Customize Data: Modify your profile and settings.
+
+# **Application Modules**
 
 ## Authentication
 
@@ -69,5 +93,15 @@ Application Modules
   ![GIF Title](https://i.imgflip.com/9oohg0.gif)
 
 
+## Profile Section
 
+ A User Profile section
 
+ - Show the details about the user.
+ - Update the details.
+ - Upload profile picture.
+ - Edit and Delete account options.
+
+ ![GIF Preview](https://i.imgflip.com/9pp1km.gif) 
+
+**Developed with ❤️ by Rohan** 
