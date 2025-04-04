@@ -1,4 +1,4 @@
-AppVerse - a universe of small application.
+# **AppVerse - A Universe Of Small Application.**
 
 AppVerse is a multi-functional React-based web application that consolidates multiple apps into a single platform. It features an intuitive UI with seamless navigation across different modules such as user authentication, shopping, movie browsing, a counter app, and a to-do list manager.
 
