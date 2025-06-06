@@ -65,6 +65,9 @@ AppVerse is a multi-functional React-based web application that consolidates mul
 - Add to Cart : Users can add and remove items from the cart.
 - Wishlist Management : Users can save favorite products for later.
 
+![Funny GIF](https://i.imgflip.com/9wevca.gif)
+
+
 ## Movie Browser
 
   Explore a list of movies with descriptions and other details.
@@ -104,4 +107,4 @@ AppVerse is a multi-functional React-based web application that consolidates mul
 
  ![GIF Preview](https://i.imgflip.com/9pp1km.gif) 
 
-**Developed with ❤️ by Rohan** 
+**Developed with ❤️ ** 
